@@ -174,11 +174,6 @@
 
     document.getElementById('overlay').onclick = hideResult;
     // document.getElementById('modal').onclick = hideResult;
-
-    setTimeout(function(){
-        dayInput.focus();
-    },1000)
-    
 })()
 
 
