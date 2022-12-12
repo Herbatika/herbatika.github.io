@@ -1,9 +1,8 @@
-var cacheName = 'herbatikapwa';
+var cacheName = 'herbatika-0.1';
 var filesToCache = [
   '/',
   '/index.html',
   '/index.js',
-  '/index.html',
   '/images/bg.png',
   '/images/fire.png',
   '/images/footer.png',
