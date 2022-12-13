@@ -83,10 +83,28 @@
         ['hk9xjQHyOECCUqjaBvC2oQ'],
     ]
     function calculateResult(year, month, day) {
-        let dob = new Date(1, month - 1, day);
-        for (let i = 0; i < range.length; i++)
-            if (dob >= range[i][0] && dob < range[i][1])
-                return dict[range[i][2]][Math.floor(Math.random()*dict[range[i][2]].length)];
+        // let dob = new Date(1, month - 1, day);
+        // for (let i = 0; i < range.length; i++)
+        //     if (dob >= range[i][0] && dob < range[i][1])
+        //         return dict[range[i][2]][Math.floor(Math.random()*dict[range[i][2]].length)];
+        switch (month) {
+            case 10:
+            case 11:
+            case 12:
+                return dict[0];
+            case 7:
+            case 9:
+            case 8:
+                return dict[1];
+            case 4:
+            case 5:
+            case 6:
+                return dict[2];
+            case 1:
+            case 2:
+            case 3:
+                return dict[3];
+        }
     }
     function checkCompleted() {
         if (validateYear(yearInput.value) && validateMonth(monthInput.value) && validateDay(dayInput.value, monthInput.value)) {
@@ -160,8 +178,7 @@
         if (yearLength == 4) {
             if (!checkCompleted())
                 this.select()
-            else 
-            {
+            else {
                 this.blur();
                 document.getElementById('result').focus()
             }
@@ -184,6 +201,6 @@
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('./service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
-  }
+        .register('./service-worker.js')
+        .then(function () { console.log('Service Worker Registered'); });
+}
