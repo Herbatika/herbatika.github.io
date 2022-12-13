@@ -1,4 +1,4 @@
-var cacheName = 'herbatika-0.3';
+var cacheName = 'herbatika-0.4';
 var filesToCache = [
   '/',
   '/index.html',

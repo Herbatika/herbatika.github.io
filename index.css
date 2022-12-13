@@ -174,7 +174,7 @@ input:focus {
     background-color: #fff;
     border-radius: 15px;
     width: 100%;
-    /* max-width: 540px; */
+    max-width: 540px;
     padding-bottom: 20px;
 
     position: fixed;
