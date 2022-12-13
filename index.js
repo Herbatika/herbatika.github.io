@@ -160,7 +160,11 @@
         if (yearLength == 4) {
             if (!checkCompleted())
                 this.select()
-            else this.blur();
+            else 
+            {
+                this.blur();
+                document.getElementById('result').focus()
+            }
         }
     }
     dayInput.onfocus = monthInput.onfocus = yearInput.onfocus = selectOnFocus;
