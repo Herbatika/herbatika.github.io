@@ -95,11 +95,11 @@
             case 7:
             case 9:
             case 8:
-                return dict[1];
+                return dict[2];
             case 4:
             case 5:
             case 6:
-                return dict[2];
+                return dict[1];
             case 1:
             case 2:
             case 3:
